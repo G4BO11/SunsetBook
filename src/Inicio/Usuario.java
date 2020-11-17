@@ -95,5 +95,13 @@ public class Usuario
         
     }
     
+    void comprar_libros()
+    {
+        
+    }
+    void consultar_libreria()
+    {
+        
+    }
     
 }
