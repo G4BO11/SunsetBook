@@ -10,7 +10,7 @@ public class Usuario
     String edad;
     String fnacimiento;
 
-    public Usuario(s) 
+    public Usuario() 
     {
         
     }
