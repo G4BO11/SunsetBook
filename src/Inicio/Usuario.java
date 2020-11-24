@@ -1,6 +1,6 @@
 package Inicio;
 
-public class Usuario 
+public abstract class  Usuario 
 {
     int id;
     String nombre;
@@ -81,27 +81,15 @@ public class Usuario
         this.fnacimiento = fnacimiento;
     }
      
-    void buscar_libros()
-    {
-        
-    }
     
+    public void cambiar_contraseña()
+    {
+        System.out.println("El Usuario "+nombre+" ha cambiado la contraseña");
+    }
     void cambiar_nickname()
     {
-        
+        System.out.println("El usuario "+nombre+" ha cambiado su Nickname a: "+nickname);
     }
-    void cambiar_contraseña()
-    {
-        
-    }
-    
-    void comprar_libros()
-    {
-        
-    }
-    void consultar_libreria()
-    {
-        
-    }
+   
     
 }

@@ -14,16 +14,33 @@ public class Cliente extends Usuario
         super(id, nombre, nickname, contraseña, correo, edad, fnacimiento);
     }
 
-    public int getCantLibros() {
+    public int getCantLibros() 
+    {
         return CantLibros;
     }
 
-    public void setCantLibros(int CantLibros) {
+    public void setCantLibros(int CantLibros) 
+    {
         this.CantLibros = CantLibros;
+    }
+
+    @Override
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    @Override
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
     }
     
     
     
+    void comprar_libros()
+    {
+        System.out.println("El usuario "+nombre+" ha comprado la cantidad de "+CantLibros+" libros");
+        
+    }
     
     
     
@@ -31,4 +48,11 @@ public class Cliente extends Usuario
     {
         
     }
+    
+    void buscar_libros()
+    {
+        
+    }
+    
+    
 }
