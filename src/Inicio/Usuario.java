@@ -40,6 +40,7 @@ public abstract class  Usuario
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
 
     public String getNickname() {
         return nickname;
@@ -82,14 +83,7 @@ public abstract class  Usuario
     }
      
     
-    public void cambiar_contraseña()
-    {
-        System.out.println("El Usuario "+nombre+" ha cambiado la contraseña");
-    }
-    void cambiar_nickname()
-    {
-        System.out.println("El usuario "+nombre+" ha cambiado su Nickname a: "+nickname);
-    }
+    
    
     
 }

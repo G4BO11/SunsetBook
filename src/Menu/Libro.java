@@ -7,7 +7,7 @@ public class Libro
     String autor;
     String editorial;
     int numpag;
-    String tamaño;
+    String tamano;
 
     public Libro() 
     {
@@ -63,17 +63,17 @@ public class Libro
         this.numpag = numpag;
     }
 
-    public String getTamaño() {
-        return tamaño;
+    public String getTamano() {
+        return tamano;
     }
 
-    public void setTamaño(String tamaño) {
-        this.tamaño = tamaño;
+    public void setTamaño(String tamano) {
+        this.tamano = tamano;
     }
 
     @Override
     public String toString() {
-        return "Libro{" + "IDLibro=" + IDLibro + ", Titulo=" + Titulo + ", autor=" + autor + ", editorial=" + editorial + ", numpag=" + numpag + ", tama\u00f1o=" + tamaño + '}';
+        return "Libro{" + "IDLibro=" + IDLibro + ", Titulo=" + Titulo + ", autor=" + autor + ", editorial=" + editorial + ", numpag=" + numpag + ", tama\u00f1o=" + tamano + '}';
     }
     
     

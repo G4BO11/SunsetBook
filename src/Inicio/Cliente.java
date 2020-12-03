@@ -1,8 +1,11 @@
 package Inicio;
 
-public class Cliente extends Usuario
+import java.io.InputStream;
+import java.util.Scanner;
+
+public class Cliente extends Usuario implements Configuracion 
 {
-    
+     
     int CantLibros;
 
     public Cliente() 
@@ -53,6 +56,32 @@ public class Cliente extends Usuario
     {
         
     }
-    
-    
+    @Override
+    public void cambiar_contraseña()
+    {
+        Scanner leer =new Scanner(System.in); 
+         System.out.println("tu contraseña es  "+contraseña+"porfavor escibre por cual deseas cambiar");
+       String name=leer.next();
+        System.out.println("El Usuario "+nombre+" ha cambiado la contraseña");
+         
+    }
+    @Override
+    public void cambiar_nickname()
+    {
+        
+         Scanner leer =new Scanner(System.in); 
+         System.out.println("tu usuario es  "+nickname+"porfavor escibre por cual deseas cambiar");
+       String name=leer.next();
+        nickname= name;
+        System.out.println("El usuario  ha cambiado su Nickname a: "+nickname);
+    }
+ @Override
+     public void cambiar_nombre()
+    {
+        Scanner leer =new Scanner(System.in); 
+         System.out.println("tu nombre  es  "+" "+nombre+" "+" porfavor escibre por cual deseas cambiar");
+       String name=leer.next();
+        nombre = name;
+        System.out.println("El usuario  ha cambiado su nombre por : "+nombre);
+    }
 }

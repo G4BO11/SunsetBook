@@ -1,6 +1,9 @@
 package Inicio;
 
-public class Admin extends Usuario
+
+import java.util.Scanner;
+
+public class Admin extends Usuario implements Configuracion
 {
     
 
@@ -23,7 +26,26 @@ public class Admin extends Usuario
     {
         
     }
+    @Override
+    public void cambiar_contraseña()
+    {
+        System.out.println("El Usuario "+nombre+" ha cambiado la contraseña");
+        
+    }
+    @Override
+    public void cambiar_nickname()
+    {
+        System.out.println("El usuario "+nombre+" ha cambiado su Nickname a: "+nickname);
+    }
+        
+    @Override
+     public void cambiar_nombre(){
     
-    
-   
-}
+        Scanner leer =new Scanner(System.in); 
+         System.out.println("tu nombre  es  "+" "+nombre+" "+"porfavor escibre por cual deseas cambiar");
+       String name=leer.next();
+       nombre = name;
+        System.out.println("El usuario  ha cambiado su nombre por : "+nombre);
+    }
+ }  
+
